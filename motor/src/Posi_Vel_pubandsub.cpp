@@ -86,7 +86,7 @@ int main(int argc, char **argv)
 // %Tag(FILL_MESSAGE)%
     geometry_msgs::Point32 msg;
     msg.x=0.0;
-    msg.y=10.0;
+    msg.y=30.0;
     msg.z=0.0;
 
 //    std::stringstream ss;
@@ -107,10 +107,10 @@ int main(int argc, char **argv)
 // %Tag(PUBLISH)%
     commands_pub.publish(msg);
 // %EndTag(PUBLISH)%
-    ros::Duration(18.0).sleep();
+    ros::Duration(12.0).sleep();
     ROS_INFO("steering_position:%f  velocity:%f",steering_info[0],steering_info[1]);
-    msg.x=20.0;
-    msg.y=40.0;
+    msg.x=9.42;
+    msg.y=70.0;
     msg.z=0.0;
     ROS_INFO("publishertest%f_%f_%f", msg.x,msg.y,msg.z);
     commands_pub.publish(msg);

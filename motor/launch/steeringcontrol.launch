@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="px4flow" name="robot_swarm_serial_send" type="swarm_serial_send"/>
+
+	<node pkg="px4flow" name="Posi_Vel_pubandsub" type="Posi_Vel_pubandsub"/>
+
+</launch>
